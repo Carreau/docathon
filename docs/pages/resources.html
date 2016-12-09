@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Docathon | Resources</title>
+    <link rel="shortcut icon" type="image/png" href="../favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../theme/css/screen.css" type="text/css" />
+    <link rel="stylesheet" href="../theme/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../theme/css/print.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="../theme/css/custom.css" type="text/css" />
+    <meta name="generator" content="Pelican" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/participate.html">Participate</a></li>
+                <li class="selected"><a href="../pages/resources.html">Resources</a></li>
+                <li><a href="../archives">Archives</a></li>
+            </ul>
+        </nav>
+        <div class="header_box">
+            <img src="../images/logo-01.png", style="width: 50px" />
+            <h1 class="sitetitle"><a href="../">Docathon</a></h1>
+        </div>
+    </header>
+
+<div class="offset-container">
+<div class="container">
+<div class="row">
+<div class="span-3">
+<h2>What's a docathon?</h2>
+<p>
+It's kind of like a hackathon, but focused on developing material and
+tools for documentation. Hackers of all skill-levels are welcome.
+<strong>The docathon will be held in late February, 2017</strong>,
+stay tuned for more details on dates. It will hopefully be the first
+of many docathons to come! 
+</p>
+</div>
+<div class="span-3">
+<h2>Why a docathon?</h2>
+Everybody knows how important documentation is. 
+However, as important as it is, we often don't give documentation enough
+attention. Docstrings are incomplete or missing argument explanations,
+examples don't compile or reveal outdated APIs, tutorials are often
+idiosynchratic (or not even there). The docathon is about changing that.
+</div>
+<div class="span-3">
+<h2>How Do I Join In?</h2>
+All you need is a project to work on that isn't your regular day job. We
+recommend you choose something open, perhaps on GitHub or Bitbucket, so that
+others can see your progress. In the coming weeks we'll send out a formal call
+for ideas and projects, and you can sign up then either as a project host
+or as a contributor.
+</div>
+</div>
+</div>
+</div>    <div id="wrapper">
+
+        <div id="content">
+            <div class="page">
+                <h1>Resources</h1>
+                <p>Below we'll keep a semi-updated list of resources that we've found useful in writing and improving our own documentation. If you've got a suggestion for something else to add, please add it as a comment to our github issue on this <a href="https://github.com/BIDS/docathon/issues/5">here</a>.</p>
+<h1>Learning how to document projects</h1>
+<hr />
+<h2>Articles</h2>
+<ul>
+<li>Modern Physics' Guide to Writing Well - https://drive.google.com/file/d/0B8VZ4vaOYWZ3ZDJzcWNWVUFFR00/view?usp=sharing</li>
+</ul>
+<h2>Web posts</h2>
+<ul>
+<li>https://www.elsevier.com/connect/infographic-tips-to-writing-better-science-papers</li>
+<li>https://jacobian.org/writing/great-documentation/</li>
+<li>https://emptysqua.re/blog/write-an-excellent-programming-blog/</li>
+<li>https://emptysqua.re/blog/resources-for-writing-about-programming/</li>
+</ul>
+<h2>Videos</h2>
+<ul>
+<li>https://www.pycon.fr/2016/videos/lire-ecrire-la-doc.html</li>
+</ul>
+<h1>Documentation tools</h1>
+<hr />
+<h2>Python</h2>
+<h3>numpydoc</h3>
+<p><a href="https://pypi.python.org/pypi/numpydoc">numpydoc</a> is a set of extension to
+sphinx initially used by the numpy project and now more widely used in the
+scientific ecosystem. Among other it provide extra sphinx directives, and
+understand the numpy docstring syntax.</p>
+<h3>Napoleon</h3>
+<p><a href="https://pypi.python.org/pypi/sphinxcontrib-napoleon">Sphinxcontrib-napoleon</a>
+is a set of extension for Sphinx which understand both NumPy and Google style
+docstrings.</p>
+<h3>Doctr</h3>
+<p><a href="https://github.com/drdoctr/doctr">Doctr</a> is meant to simplify the deployment
+of documentation from Travis-CI to GitHub pages, by providing a single tool to
+setup, build and deploying documentation build. </p>
+<p>It is an alternative to readthedocs where it is not always simple to get all
+dependency installed.</p>
+<p>Doctr is still young and an easy to contribute project with a number of missing
+features. </p>
+<h3>Sphinx Gallery</h3>
+<p><a href="https://github.com/sphinx-gallery/sphinx-gallery">Sphinx Gallery</a> is a Sphinx
+Extensions that will automatically generate a gallery from a repository of
+examples.</p>
+<p>Sphinx Gallery automatically make all identifiers present in every code block
+to link to their definition. In conjunction with [intersphinx] this is allow
+seamless navigation in between related projects. </p>
+<h3>Documentation portals</h3>
+<p>The following tools enter the category of "Documentation portals" they attempt
+to gather documentation from several source in a coherent, uniform and
+searchable portal. </p>
+<p><a href="http://devdocs.io/">Devdocs</a> started as a portal to gather documentation for
+javascript only. Now expanded to many project. Browser based but store content
+in local storage so available online projects need to opt-in a write a
+"Scrapper" to parse already existing HTML docs.</p>
+<p>It <em>not</em> have a concept of next-previous page so is not meant for read-through
+tutorials.</p>
+<p><a href="https://kapeli.com/dash">Dash</a> is a similar project. It is though (for now)
+available for MacOS only, as native application. It is capable to get online
+resources, but is mostly meant to work off-line.</p>
+<p><a href="https://pydoc.io">PyDoc</a> fills again a similar niche.  PyDoc first version
+were made public at end of 2016. Unlike the two above, PyDoc is meant to be
+Python only, and has no intent to be available off-line. Its tight integration
+with Python should allows it to automatically build <em>api only</em> docs for all
+Python project on PyPI and Warehouse. </p>
+<h3>Miscs</h3>
+<p><a href="https://pypi.python.org/pypi/docrepr">Docrepr</a> extend the concept of
+MimeBundle that can be found in IPython and Jupyter to extend it to python's
+docstring. Using docrepr, the Jupyter Notebook and Spyder can show docstring of
+interactive object using rich html. </p>
+<p><a href="https://github.com/michaelpacer/thebe-test">thebe test</a> is a prototype to make
+example written using sphinx interactive and backed by an actual running
+kernel. Either running on a temporary server in the cloud (like SymPy
+documentation console), or even cnnecting to a locally running jupyter notebook
+server. </p>
+<h2>C++</h2>
+<ul>
+<li><a href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a></li>
+<li><a href="http://www.boost.org/doc/libs/1_62_0/doc/html/boostbook.html">BoostBook</a> and <a href="http://www.boost.org/doc/libs/1_62_0/doc/html/quickbook.html">QuickBook</a></li>
+<li><a href="https://breathe.readthedocs.io/en/latest/">Breathe</a> for connecting Sphinx and Doxygen</li>
+<li><a href="https://jessevdk.github.io/cldoc/">cldoc</a> — clang-based documentation generator</li>
+</ul>
+            </div>
+
+            <div class="clear"></div>
+            <footer>
+                <p>
+                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                &middot;
+                Powered by <a href="http://getpelican.com">Pelican</a>
+            </footer>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+</html>
